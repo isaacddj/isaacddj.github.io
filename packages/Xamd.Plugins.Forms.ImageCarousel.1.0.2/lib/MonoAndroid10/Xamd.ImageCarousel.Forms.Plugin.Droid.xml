@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xamd.ImageCarousel.Forms.Plugin.Droid</name>
+    </assembly>
+    <members>
+        <member name="T:Xamd.ImageCarousel.Forms.Plugin.Droid.ImageCarouselRenderer">
+            <summary>
+            ImageCarousel Implementation
+            </summary></member>
+        <member name="M:Xamd.ImageCarousel.Forms.Plugin.Droid.ImageCarouselRenderer.Init">
+            <summary>
+            Used for registration with dependency service
+            </summary></member>
+    </members>
+</doc>

@@ -1,0 +1,4 @@
+﻿[*.vb]
+
+# BC2001: no se encontró el archivo 'C:\Users\foxir\source\repos\GAMING KIOSK\GAMING KIOSK\Producto.vb'
+dotnet_diagnostic.BC2001.severity = none

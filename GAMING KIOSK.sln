@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.34114.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GAMING KIOSK", "GAMING KIOSK\GAMING KIOSK.vbproj", "{4FAC5CFE-1307-4D0F-8265-884925AC46CC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{06936975-5FA6-41EB-BCEF-9D88845FAB72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FAC5CFE-1307-4D0F-8265-884925AC46CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FAC5CFE-1307-4D0F-8265-884925AC46CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FAC5CFE-1307-4D0F-8265-884925AC46CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FAC5CFE-1307-4D0F-8265-884925AC46CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30C279C6-5EA3-4F83-A0D8-2CCEB98263DB}
+	EndGlobalSection
+EndGlobal

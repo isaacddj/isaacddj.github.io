@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{4FAC5CFE-1307-4D0F-8265-884925AC46CC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>GAMING_KIOSK</RootNamespace>
+    <AssemblyName>GAMING KIOSK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44327</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GAMING KIOSK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>GAMING KIOSK.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Xamarin.Forms.Core, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.1.5.0.6446\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.1.5.0.6446\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamarin.Forms.1.5.0.6446\lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamd.ImageCarousel.Forms.Plugin.Abstractions, Version=1.0.5745.25329, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xamd.Plugins.Forms.ImageCarousel.1.0.2\lib\portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamd.ImageCarousel.Forms.Plugin.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="4\WhatsApp Image 2024-01-09 at 10.32.13 PM.jpeg" />
+    <Content Include="4\WhatsApp Image 2024-01-09 at 10.33.23 PM.jpeg" />
+    <Content Include="4\WhatsApp Image 2024-01-09 at 10.34.01 PM.jpeg" />
+    <Content Include="4\WhatsApp Image 2024-01-09 at 10.54.22 PM.jpeg" />
+    <Content Include="5\Ensamble.jpg" />
+    <Content Include="5\ifericos.png" />
+    <Content Include="5\Laptops.jpg" />
+    <Content Include="5\Licencias.jpg" />
+    <Content Include="5\mantenimiento.jpg" />
+    <Content Include="5\Reparacion.png" />
+    <Content Include="app.js" />
+    <Content Include="Computadoras.aspx" />
+    <Content Include="Consolas IMG\1.jpg" />
+    <Content Include="Consolas IMG\10.jpg" />
+    <Content Include="Consolas IMG\11.jpg" />
+    <Content Include="Consolas IMG\12.jpg" />
+    <Content Include="Consolas IMG\13.jpg" />
+    <Content Include="Consolas IMG\14.jpg" />
+    <Content Include="Consolas IMG\15.jpg" />
+    <Content Include="Consolas IMG\16.jpg" />
+    <Content Include="Consolas IMG\17.jpg" />
+    <Content Include="Consolas IMG\18.jpg" />
+    <Content Include="Consolas IMG\19.jpg" />
+    <Content Include="Consolas IMG\2.jpg" />
+    <Content Include="Consolas IMG\20.jpg" />
+    <Content Include="Consolas IMG\3.jpg" />
+    <Content Include="Consolas IMG\4.jpg" />
+    <Content Include="Consolas IMG\5.jpg" />
+    <Content Include="Consolas IMG\6.jpg" />
+    <Content Include="Consolas IMG\7.jpg" />
+    <Content Include="Consolas IMG\8.jpg" />
+    <Content Include="Consolas IMG\9.jpg" />
+    <Content Include="estilo.css" />
+    <Content Include="Imag Comp\1.jpg" />
+    <Content Include="Imag Comp\2.png" />
+    <Content Include="Imag Comp\3.jpg" />
+    <Content Include="Imag Comp\4.jpg" />
+    <Content Include="Imag Comp\5.jpg" />
+    <Content Include="Imag Comp\6.jpg" />
+    <Content Include="Imag Comp\7.jpg" />
+    <Content Include="Imag Comp\8.jpg" />
+    <Content Include="Imag Comp\Logo.png" />
+    <Content Include="Imag Comp\WhatsApp Image 2023-12-02 at 10.42.50 PM.jpeg" />
+    <Content Include="Img Perif\1.jpg" />
+    <Content Include="Img Perif\2.jpg" />
+    <Content Include="Img Perif\3.jpg" />
+    <Content Include="Img Perif\4.png" />
+    <Content Include="Img Perif\5.jpg" />
+    <Content Include="Img Perif\6.jpg" />
+    <Content Include="Img Perif\7.jpg" />
+    <Content Include="Img Perif\8.jpg" />
+    <Content Include="JavaScript.js" />
+    <Content Include="JavaScript1.js" />
+    <Content Include="Monitor Img\1.jpg" />
+    <Content Include="Monitor Img\10.jpg" />
+    <Content Include="Monitor Img\11.jpg" />
+    <Content Include="Monitor Img\12.jpg" />
+    <Content Include="Monitor Img\13.jpg" />
+    <Content Include="Monitor Img\14.png" />
+    <Content Include="Monitor Img\2.png" />
+    <Content Include="Monitor Img\3.jpg" />
+    <Content Include="Monitor Img\4.jpg" />
+    <Content Include="Monitor Img\5.jpg" />
+    <Content Include="Monitor Img\6.jpg" />
+    <Content Include="Monitor Img\7.jpg" />
+    <Content Include="Monitor Img\8.png" />
+    <Content Include="Monitor Img\9.jpg" />
+    <Content Include="NewFolder1\carrito-de-compras.png" />
+    <Content Include="NewFolder1\CARRITO.png" />
+    <Content Include="NewFolder1\Logo.jpg" />
+    <Content Include="NewFolder1\trash.png" />
+    <Content Include="Perifericos.aspx" />
+    <Content Include="Perifericosssss img\1.jpg" />
+    <Content Include="Perifericosssss img\10.png" />
+    <Content Include="Perifericosssss img\11.jpg" />
+    <Content Include="Perifericosssss img\12.jpg" />
+    <Content Include="Perifericosssss img\13.jpg" />
+    <Content Include="Perifericosssss img\14.jpg" />
+    <Content Include="Perifericosssss img\15.jpg" />
+    <Content Include="Perifericosssss img\16.jpg" />
+    <Content Include="Perifericosssss img\17.jpg" />
+    <Content Include="Perifericosssss img\18.jpg" />
+    <Content Include="Perifericosssss img\19.jpg" />
+    <Content Include="Perifericosssss img\2.jpg" />
+    <Content Include="Perifericosssss img\20.png" />
+    <Content Include="Perifericosssss img\21.png" />
+    <Content Include="Perifericosssss img\22.png" />
+    <Content Include="Perifericosssss img\23.png" />
+    <Content Include="Perifericosssss img\24.jpg" />
+    <Content Include="Perifericosssss img\25.jpg" />
+    <Content Include="Perifericosssss img\26.jpg" />
+    <Content Include="Perifericosssss img\27.jpg" />
+    <Content Include="Perifericosssss img\28.jpg" />
+    <Content Include="Perifericosssss img\29.jpg" />
+    <Content Include="Perifericosssss img\3.jpg" />
+    <Content Include="Perifericosssss img\30.jpg" />
+    <Content Include="Perifericosssss img\31.jpg" />
+    <Content Include="Perifericosssss img\32.jpg" />
+    <Content Include="Perifericosssss img\33.png" />
+    <Content Include="Perifericosssss img\34.jpg" />
+    <Content Include="Perifericosssss img\35.jpg" />
+    <Content Include="Perifericosssss img\36.png" />
+    <Content Include="Perifericosssss img\37.jpg" />
+    <Content Include="Perifericosssss img\38.jpg" />
+    <Content Include="Perifericosssss img\39.jpg" />
+    <Content Include="Perifericosssss img\4.jpg" />
+    <Content Include="Perifericosssss img\40.png" />
+    <Content Include="Perifericosssss img\41.jpg" />
+    <Content Include="Perifericosssss img\42.jpg" />
+    <Content Include="Perifericosssss img\5.jpg" />
+    <Content Include="Perifericosssss img\6.jpg" />
+    <Content Include="Perifericosssss img\7.jpg" />
+    <Content Include="Perifericosssss img\8.jpg" />
+    <Content Include="Perifericosssss img\9.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+    <Content Include="WebForm4.aspx" />
+    <Content Include="WebForm5.aspx" />
+    <Content Include="WebForm6.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Computadoras.aspx.designer.vb">
+      <DependentUpon>Computadoras.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Computadoras.aspx.vb">
+      <DependentUpon>Computadoras.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Datos.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Perifericos.aspx.designer.vb">
+      <DependentUpon>Perifericos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Perifericos.aspx.vb">
+      <DependentUpon>Perifericos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Producto.vb" />
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.vb">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.vb">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm4.aspx.designer.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm4.aspx.vb">
+      <DependentUpon>WebForm4.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm5.aspx.designer.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm5.aspx.vb">
+      <DependentUpon>WebForm5.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="WebForm6.aspx.designer.vb">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm6.aspx.vb">
+      <DependentUpon>WebForm6.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <Content Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </Content>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Content>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <Content Include="StyleSheet1.less" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53382</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44327/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+    <Error Condition="!Exists('..\packages\Xamarin.Forms.1.5.0.6446\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Xamarin.Forms.1.5.0.6446\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\packages\Xamarin.Forms.1.5.0.6446\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.5.0.6446\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
